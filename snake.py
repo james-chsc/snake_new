@@ -1,6 +1,7 @@
 from typing import List, Union
 import random
 
+
 class Point:
     def __init__(self, x:int, y:int) -> None:
         """
