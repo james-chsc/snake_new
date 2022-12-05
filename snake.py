@@ -13,7 +13,7 @@ class Point:
 class Region:
     def __init__(self, p1:Point, p2:Point) -> None:
         """
-        給兩個點，定義一個範圍
+        給兩個點，定義一個矩形範圍
         """
         self.p1 = p1
         self.p2 = p2
@@ -27,6 +27,7 @@ class Region:
             random.randrange(self.p1.x, self.p2.x), 
             random.randrange(self.p1.y, self.p2.y) 
         )
+
 
 class Snake:
     def __init__(self, region:Region, head:Union[Point, None]=None) -> None:
