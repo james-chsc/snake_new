@@ -1,4 +1,4 @@
-# import pygame
+import pygame
 from snake import Point, Region, Snake
 
 region = Region(Point(0,0), Point(100,100))
@@ -11,4 +11,3 @@ snake.head = region.get_rnd_point()
 
 snake.go(dir="R")
 if snake.is_die(): pass
-
